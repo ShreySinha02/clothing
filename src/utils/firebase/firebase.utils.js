@@ -1,6 +1,6 @@
 import {initializeApp} from 'firebase/app'
 import {getAuth,signInWithRedirect
-,signInWithPopup,GithubAuthProvider, GoogleAuthProvider} from 'firebase/auth'
+,signInWithPopup, GoogleAuthProvider} from 'firebase/auth'
 
 
 import {getFirestore,doc,getDoc,setDoc} from "firebase/firestore"
@@ -25,6 +25,7 @@ const firebaseConfig = {
 
   export const auth = getAuth()
   export const signInWithGooglePopup = ()=> signInWithPopup(auth,provider)
+  export const signInWithGoogleRedirect = () => signInWithRedirect(auth,provider)
 
 
   export const db=getFirestore() 
