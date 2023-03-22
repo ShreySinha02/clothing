@@ -1,0 +1,14 @@
+import Button from '../button/botton';
+import './cart-dropdown.styles.scss'
+
+const CartDropdown = () =>{
+    return(
+        <div className='cart-dropdown-container'>
+            <div className='cart-items'>
+            <Button>Go To CheckOut</Button>
+            </div>
+        </div>
+    );
+}
+
+export default CartDropdown;
