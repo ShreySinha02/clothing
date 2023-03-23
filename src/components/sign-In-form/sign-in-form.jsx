@@ -1,8 +1,8 @@
 import { useState } from "react";
 import {
-  createAuthUserWithEmailAndPassword,
+  
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
+  
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
 import Button from "../button/botton";
@@ -37,7 +37,7 @@ const SignInForm = () => {
     event.preventDefault();
    
     try {
-      const {user} = await signInAuthUserWithEmailAndPassword(email,password);
+       await signInAuthUserWithEmailAndPassword(email,password);
       reserFormField()
     } catch (error) {
       switch (error.code) {

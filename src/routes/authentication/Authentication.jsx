@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import SignInForm from "../../components/sign-In-form/sign-in-form";
 import SignUpForm from "../../components/sign-up-form/sign-up-form";
 import './authentication.style.scss'
